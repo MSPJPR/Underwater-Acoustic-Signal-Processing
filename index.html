@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Underwater Acoustic Signal Processing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Underwater Acoustic Signal Processing</h1>
+
+    <section>
+      <h2>Ambient Noise Simulation</h2>
+      <button id="generateNoise">Generate Noise</button>
+      <canvas id="noiseCanvas" width="300" height="200"></canvas>
+      <button id="downloadNoise">Download Noise Data</button>
+    </section>
+
+    <section>
+      <h2>Sonar Signal Processing</h2>
+      <button id="calculateSNR">Calculate SNR</button>
+      <p id="snrResult">Signal-to-Noise Ratio: Not Calculated</p>
+    </section>
+
+    <section>
+      <h2>Beamforming Simulation</h2>
+      <button id="simulateBeamforming">Simulate Beamforming</button>
+      <canvas id="beamCanvas" width="300" height="200"></canvas>
+    </section>
+
+    <section>
+      <h2>Adjust Parameters</h2>
+      <label for="signalPower">Signal Power (0-100):</label>
+      <input type="range" id="signalPower" min="0" max="100" value="50">
+      
+      <label for="noisePower">Noise Power (0-50):</label>
+      <input type="range" id="noisePower" min="0" max="50" value="25">
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
